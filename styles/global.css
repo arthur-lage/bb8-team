@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wgth@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-orange: #f79d2d;
+  --light-grey: #ababab;
+  --grey: #7C7C7C;
+}
+
+.orange-text {
+  color: var(--main-orange);
+}
+
+.orange-background {
+  background-color: var(--main-orange);
+}

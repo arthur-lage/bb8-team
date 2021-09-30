@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro - BB8 Team</title>
+    <link rel="shortcut icon" href="../assets/logo.svg" type="image/svg" />
+    <link rel="stylesheet" href="../styles/register.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/global.css">
+  </head>
+  <body>
+    <div class="illustrations">
+        <img src="../assets/graphic-design.svg" id="top-left-illustration">
+        <img src="../assets/development.svg" id="bottom-right-illustration">
+        <img src="../assets/writing.svg" id="top-right-illustration">
+        <img src="../assets/development.svg" id="top-center-illustration">
+        <img src="../assets/graphic-design.svg" id="bottom-left-illustration">
+        <img src="../assets/writing.svg" id="bottom-center-illustration">
+        <img src="../assets/graphic-design.svg" id="center-right-illustration">
+    </div>
+    <main>
+      <div class="logo">
+          <img src="../assets/logo.svg" alt="Logo - BB8 Team">
+      </div>
+      <div class="title">
+          <h2>Register</h2>
+      </div>
+      <form>
+        <div class="form-group">
+            <input type="text" class="form-control" required name="name" id="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" required name="email" id="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <input type="password" required class="form-control" name="password" id="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <input type="password" required class="form-control" name="confirm-password" id="confirm-password" placeholder="Confirm password">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" name="accept-terms-of-use" required id="accept-terms-of-use">
+            <label for="accept-terms-of-use">I accept the <a class="orange-text" href="#">Terms of use</a></label>
+        </div>
+        <button type="submit" class="btn btn-primary register-button">Register</button>
+      </form>
+      <p class="to-login-text">Already have an account? <a class="orange-text bold-text" href="./login.html">Log in</a></p>
+    </main>
+    <footer>
+        <p>© 2021 BB8 Team. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
