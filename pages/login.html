@@ -37,19 +37,19 @@
             <input type="email" class="form-control" required name="email" id="email" placeholder="Email">
         </div>
         <div class="form-group">
-            <input type="password" required class="form-control" name="password" id="password" placeholder="Password">
+            <input type="password" min="4" required class="form-control" name="password" id="password" placeholder="Password">
         </div>
         <div class="form-group form-check">
             <input type="checkbox" name="keep-logged" required id="keep-logged">
             <label for="keep-logged">Keep me logged in</label>
         </div>
-        <button type="submit" class="btn btn-primary login-button">Log in</button>
+        <button id="login-button" type="submit" class="btn btn-primary login-button">Log in</button>
       </form>
       <p class="to-register-text">New here? <a class="orange-text bold-text" href="./register.html">Register</a></p>
     </main>
     <footer>
         <p>© 2021 BB8 Team. All rights reserved.</p>
     </footer>
-    <script src="login-and-register.js"></script>
+    <script src="../scripts/login-and-register.js"></script>
   </body>
 </html>

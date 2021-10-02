@@ -40,21 +40,22 @@
             <input type="email" class="form-control" required name="email" id="email" placeholder="Email">
         </div>
         <div class="form-group">
-            <input type="password" required class="form-control" name="password" id="password" placeholder="Password">
+            <input type="password" min="4" required class="form-control" name="password" id="password" placeholder="Password">
         </div>
         <div class="form-group">
-            <input type="password" required class="form-control" name="confirm-password" id="confirm-password" placeholder="Confirm password">
+            <input type="password" min="4" required class="form-control" name="confirm-password" id="confirm-password" placeholder="Confirm password">
         </div>
         <div class="form-group form-check">
             <input type="checkbox" name="accept-terms-of-use" required id="accept-terms-of-use">
             <label for="accept-terms-of-use">I accept the <a class="orange-text" href="#">Terms of use</a></label>
         </div>
-        <button type="submit" class="btn btn-primary register-button">Register</button>
+        <button id="register-button" type="submit" class="btn btn-primary register-button">Register</button>
       </form>
       <p class="to-login-text">Already have an account? <a class="orange-text bold-text" href="./login.html">Log in</a></p>
     </main>
     <footer>
         <p>© 2021 BB8 Team. All rights reserved.</p>
     </footer>
+    <script src="../scripts/login-and-register.js"></script>
   </body>
 </html>
