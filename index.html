@@ -25,7 +25,7 @@
       <div class="logo">
         <a href="">
           <img src="./assets/logo.svg" alt="logo" />
-          BB8 Team
+          <span>BB8 Team</span>
         </a>
       </div>
       <div class="nav-links">
@@ -37,31 +37,40 @@
             <a href="./pages/register.html">Register</a>
           </li>
           <li>
-            <a class="cta" href="./pages/login.html">Log in</a>
+            <button class="login" onclick="window.location.href='./pages/login.html'">Log in</button>
+          </li>
+          <li>
+            <button id="theme-icon-button" onclick="toggleTheme()">
+              <img id="theme-icon" src="./assets/sun.svg" alt="Switch between dark and light theme">
+            </button>
           </li>
         </ul>
       </div>
     </nav>
     <main>
       <section class="first-section">
-        <div class="content">
-          <h2>Quality for cheap.</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ducimus
-            qui veritatis facilis suscipit possimus perspiciatis ullam quam.
-            Tempora aspernatur dolor magnam, amet minus ratione deleniti autem
-            sunt iste error.
-          </p>
-          <button class="hire-us-button">Hire us</button>
-        </div>
-        <div class="illustration">
-          <img
-            src="./assets/computer-illustration.svg"
-            alt="Computer illustration"
-          />
+        <div class="main-content">
+          <div class="content">
+            <h2>Quality for cheap.</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
+              ducimus qui veritatis facilis suscipit possimus perspiciatis ullam
+              quam. Tempora aspernatur dolor magnam, amet minus ratione deleniti
+              autem sunt iste error.
+            </p>
+            <button class="hire-us-button">Hire us</button>
+          </div>
+          <div class="illustration">
+            <img
+              src="./assets/computer-illustration.svg"
+              alt="Computer illustration"
+            />
+          </div>
         </div>
         <div class="arrow-wrapper">
-          <img src="./assets/down-arrow.svg" />
+          <button id="go-down-arrow" onclick="goDown()">
+            <img src="./assets/down-arrow.svg" />
+          </button>
         </div>
       </section>
       <section class="second-section">
@@ -147,7 +156,7 @@
         <h2>What our customers are saying...</h2>
         <div class="testimonials">
           <div class="testimonial">
-            <img src="./assets/quotes.svg">
+            <img src="./assets/quotes.svg" />
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Reiciendis sunt voluptate, odio a vitae neque sequi quos
@@ -157,7 +166,7 @@
             <h4>John Doe</h4>
           </div>
           <div class="testimonial">
-            <img src="./assets/quotes.svg">
+            <img src="./assets/quotes.svg" />
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Reiciendis sunt voluptate, odio a vitae neque sequi quos
@@ -167,7 +176,7 @@
             <h4>John Doe</h4>
           </div>
           <div class="testimonial">
-            <img src="./assets/quotes.svg">
+            <img src="./assets/quotes.svg" />
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Reiciendis sunt voluptate, odio a vitae neque sequi quos
@@ -207,5 +216,7 @@
       </div>
     </footer>
     <script src="./scripts/go-to-top.js"></script>
+    <script src="./scripts/go-down-arrow.js"></script>
+    <script src="./scripts/theme.js"></script>
   </body>
 </html>

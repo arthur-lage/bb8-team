@@ -1,0 +1,160 @@
+body {
+  background: var(--background-color) !important;
+  overflow-x: hidden;
+  transition: .5s ease;
+}
+
+nav {
+  display: flex !important;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  transition: .5s ease;
+  background: var(--navbar-color);
+  justify-content: space-between;
+  padding: 16px 48px;
+}
+
+nav ul {
+  list-style: none;
+  align-items: center;
+  display: flex;
+}
+
+nav .logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+nav .logo img {
+  width: 43px;
+  height: 43px;
+}
+
+nav .logo span {
+  font-size: 35px;
+  margin-left: 15px;
+  color: var(--main-orange);
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+nav .nav-links ul li {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 48px;
+}
+
+nav .nav-links #theme-icon-button{
+  border: 0;
+  background: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+nav .nav-links #theme-icon{
+  width: 100%;
+  fill: var(--cta-button);
+  height: 100%;
+}
+
+nav .nav-links ul li a {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: var(--navlink-text);
+}
+
+nav .nav-links .login{
+  text-decoration: none;
+  transition: .2s ease;
+  background: var(--login-button);
+  height: 37px;
+  width: 135px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 0;
+  font-weight: 500;
+  color: #fff;
+}
+
+nav .nav-links .login:hover{
+  filter: brightness(0.9);
+}
+
+.first-section .main-content {
+  display: flex;
+  padding: 50px 60px 40px 60px;
+}
+
+.first-section .main-content .content h2 {
+  color: var(--main-orange);
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.first-section .main-content .content p {
+    font-weight: 100;
+    font-size: 25px;
+    max-width: 700px;
+    margin-top: 25px;
+    color: var(--text-color);
+}
+
+.first-section .main-content .content .hire-us-button {
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    border: 0;
+    margin-top: 25px;
+    color: #F8982C;
+    transition: .2s ease;
+    background: var(--cta-button);
+}
+
+.first-section .main-content .content .hire-us-button:hover {
+  filter: brightness(.9);
+}
+
+.first-section .main-content .illustration {
+    margin-left: 75px;
+}
+
+.first-section .main-content .illustration img {
+    width: 375px;
+    height: 375px;
+}
+
+.arrow-wrapper {
+  text-align: center;
+  animation: arrow-animation 1.5s normal infinite ease;
+}
+
+#go-down-arrow {
+  padding: 10px;
+  border: 0;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@keyframes arrow-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(12.5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
