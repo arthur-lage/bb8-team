@@ -155,3 +155,81 @@ footer {
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 375px) {
+  body {
+    overflow-y: auto;
+  }
+
+  .logo {
+    margin-top: 95px;
+  }
+
+  .logo img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .title {
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+
+  .form-group {
+    margin: 17px 0;
+  }
+
+  #top-left-illustration {
+    left: 0;
+    width: 162px;
+    height: 162px;
+  }
+
+  #bottom-right-illustration {
+    right: 0;
+    top: 100px;
+    width: 143.24px;
+    height: 143.24px;
+  }
+
+  #top-center-illustration {
+    left: 24px;
+    top: 511px;
+    width: 91.99px;
+    height: 92.09px;
+  }
+
+  #bottom-left-illustration {
+    width: 73.38px;
+    left: 245px;
+    transform: rotateZ(-35deg);
+    height: 73.43px;
+    top: 448px;
+  }
+
+  #top-right-illustration {
+    top: 242px;
+    left: 0;
+    width: 153.49;
+    height: 153.69;
+    transform: rotateZ(35deg);
+  }
+
+  #bottom-center-illustration{
+    bottom: 0;
+    left: 270px;
+    right: 0;
+    transform: rotateZ(0deg);
+    width: 115.74px;
+    height: 114.26px;
+  }
+
+  #center-right-illustration{
+    right: 212.48px;
+    bottom: 0;
+    width: 71.15px;
+    height: 71.14px;
+    transform: rotateZ(46.46deg);
+    left: 0;
+  }
+}
