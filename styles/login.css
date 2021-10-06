@@ -1,6 +1,16 @@
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   height: 100vh;
+  width: 100vw;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background: var(--main-orange);
 }
 
 main {
@@ -45,7 +55,7 @@ label[for="keep-logged"] {
   font-family: "Nunito", sans-serif;
   color: var(--light-grey);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px !important;
 }
 
 label[for="keep-logged"] a {
@@ -60,6 +70,7 @@ label[for="keep-logged"] a:hover {
   font-family: "Nunito", sans-serif;
   color: var(--light-grey);
   margin-top: 50px;
+  font-size: 18px;
 }
 
 .to-register-text a {
@@ -76,7 +87,7 @@ form {
 
 input {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 18px !important;
 }
 
 .form-group {
@@ -88,7 +99,7 @@ input {
 }
 
 footer {
-  margin-top: 113px;
+  margin-top: 50px;
   width: 100%;
   font-size: 15px;
   text-align: center;
@@ -161,6 +172,13 @@ footer {
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .form-control {
+    font-size: 20px !important;
+    color: red !important;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   body {
     overflow-y: auto;
@@ -178,6 +196,10 @@ footer {
   .title {
     margin-top: 40px;
     margin-bottom: 24px;
+  }
+
+  footer{
+    margin-top: 50px;
   }
 
   .form-group {
@@ -236,5 +258,11 @@ footer {
     height: 71.14px;
     transform: rotateZ(46.46deg);
     left: 0;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  form{
+    width: 295px;
   }
 }

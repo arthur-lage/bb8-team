@@ -1,6 +1,16 @@
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  width: 100vw;
   height: 100vh;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background: var(--main-orange);
 }
 
 main {
@@ -45,7 +55,7 @@ label[for="accept-terms-of-use"] {
   font-family: "Nunito", sans-serif;
   color: var(--light-grey);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 label[for="accept-terms-of-use"] a {
@@ -60,6 +70,7 @@ label[for="accept-terms-of-use"] a:hover {
   font-family: "Nunito", sans-serif;
   color: var(--light-grey);
   margin-top: 50px;
+  font-size: 18px;
 }
 
 .to-login-text a {
@@ -76,12 +87,14 @@ form {
 
 input {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 18px !important;
 }
 
 footer {
-  margin-top: 77px;
+  margin-top: 50px;
   width: 100%;
+  margin-bottom: 83px;
+  font-size: 15px;
   text-align: center;
   color: var(--light-grey);
   animation: fade-and-appear-animation 0.85s normal 1 forwards;
